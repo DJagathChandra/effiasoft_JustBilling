@@ -1,0 +1,504 @@
+{    
+"Hello_Page" : {
+	"txt_Logo_Hello" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Hello!']"
+   },
+	"txt_NewToJB" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tvNewApp"
+   },
+	"btn_NewToJB" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout[@resource-id='cloud.effiasoft.justbillingstd:id/llNewRegistration']/android.widget.ImageView"
+   },
+	"txt_Why_NewToJB" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Select this option if you are using the app for the first time']"
+   },
+	"txt_AlredyRegistered" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tvRegApp"
+   },
+	"btn_AlredyRegistered" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout[@resource-id='cloud.effiasoft.justbillingstd:id/llAlreadyRegistered']/android.widget.ImageView"
+   },
+	"txt_Why_AlredyRegistered" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Already registered with us? Select this choice']"
+   }
+},
+"Permissions_Page" : {
+	"txt_Permissions" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Permissions']"
+   },
+	"txt_Disagree" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Disagree']"
+   },
+	"btn_Disagree" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/btn_disagree"
+   },
+	"txt_I_Agree" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/verify"
+   },
+	"btn_I_Agree" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/btn_agree"
+   },
+	"btn_Frame_OnlyThisTime" : {
+	"locatorType" : "id",
+	"locatorValue" : "com.android.permissioncontroller:id/permission_allow_one_time_button"
+   },
+	"btn_Frame_WhileUsingTheApp" : {
+	"locatorType" : "id",
+	"locatorValue" : "com.android.permissioncontroller:id/permission_allow_foreground_only_button"
+   },
+	"btn_Frame_DontAllow" : {
+	"locatorType" : "id",
+	"locatorValue" : "com.android.permissioncontroller:id/permission_deny_button"
+   },
+	"txt_TermsAndConditions" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Terms & Conditions']"
+   }
+},
+"Business_Type_Page" : {
+	"txt_Logo_of_Page" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.FrameLayout[@resource-id='cloud.effiasoft.justbillingstd:id/collapsing_toolbar_layout']/android.widget.RelativeLayout/android.widget.LinearLayout//android.widget.TextView"
+   },
+	"lst_of_Business" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName']"
+   },
+	"txt_Retail" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Retail']"
+   },
+	"btn_Retail" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[1]"
+   },
+	"txt_Restaurent" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Restaurant']"
+   },
+	"btn_Restaurent" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[2]"
+   },
+	"txt_Service" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Service']"
+   },
+	"btn_Service" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[3]"
+   },
+	"txt_Distribution" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Distribution']"
+   },
+	"btn_Distribution" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[4]"
+   },
+	"lst_Of_Types_In_Business" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//androidx.recyclerview.widget.RecyclerView[@resource-id='cloud.effiasoft.justbillingstd:id/rvSubCates']//android.widget.TextView"
+   }
+ },
+"Retail_Business_Page" : {
+	"type_Grocery" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Grocery']"
+   },
+	"txt_Flower_Nursery" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Flower & Nursery']"
+   },
+	"subCatogery_Screen" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//androidx.recyclerview.widget.RecyclerView[@resource-id='cloud.effiasoft.justbillingstd:id/rvSubCates']"
+   },
+	"txt_Others" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='Others']"
+   }
+ },
+"Subscription_Page" : {
+	"txt_Subscription" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Subscription']"
+   },
+	"txt_Free_Subscription" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='FREE']"
+   },
+	"txt_Professional_Subscription" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvName' and @text='PROFESSIONAL']"
+   },
+	"btn_Free_Subscription" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[1]"
+   },
+	"btn_Professional_Subscription" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[2]"
+   },
+	"txt_Free_trail" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/txt_trail' and @text='15 Days Free Trial']"
+   },
+	"btn_Free_trail" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.ImageView[@resource-id='cloud.effiasoft.justbillingstd:id/imgCheckFree']"
+   },
+	"txt_Proceed_Subscription" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tv_proceed"
+   },
+	"btn_Proceed_Subscription" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/fabProceed"
+   }
+  },
+"Organization_Details_Page" : {
+	"txt_Organization_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Organization Details']"
+   },
+	"txt_Company_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='COMPANY DETAILS']"
+   },
+	"txt_Company_Details_Fields" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView']"
+   },
+	"txt_Company_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Company Name']"
+   },
+	"inputFeild_Company_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_company_name']"
+   },
+	"txt_Owner_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Owner name']"
+   },
+	"inputFeild_Owner_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_owner_name']"
+   },
+	"dropDown_Country_Code" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/spn_mob_code"
+   },
+	"dropDown_Country_Code_xpath" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.Spinner[@resource-id='cloud.effiasoft.justbillingstd:id/spn_mob_code']"
+   },
+	"selection_Country_Code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvTitle' and @text='91']"
+   },
+	"txt_Mobile_No" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Mobile No']"
+   },
+	"inputFeild_Mobile_No" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_mobile_number']"
+   },
+	"txt_Email_Address" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Email address']"
+   },
+	"inputFeild_Email_Address" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_email_address']"
+   },
+	"txt_New_Password" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Password']"
+   },
+	"inputFeild_New_Password" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_password']"
+   },
+	"txt_New_Confirm_Password" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Confirm password']"
+   },
+	"inputFeild_New_Confirm_Password" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_confirm_password']"
+   },
+	"txt_Location_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='LOCATION']"
+   },
+	"txt_Country_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Country']"
+   },
+	"dropDown_Country_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.Spinner[@resource-id='cloud.effiasoft.justbillingstd:id/spn_country']"
+   },
+	"selection_Country_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.FrameLayout[@resource-id='cloud.effiasoft.justbillingstd:id/contentPanel']//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvTitle' and @text='India']"
+   },
+	"txt_State_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='State']"
+   },
+	"dropDown_State_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout//android.widget.Spinner[@resource-id='cloud.effiasoft.justbillingstd:id/spn_state']"
+   },
+	"selection_State_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.RelativeLayout//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvTitle' and @text='Telangana']"
+   },
+	"txt_City_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='City']"
+   },
+	"dropDown_City_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout//android.widget.Spinner[@resource-id='cloud.effiasoft.justbillingstd:id/spn_city']"
+   },
+	"selection_City_Name" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.RelativeLayout//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvTitle' and @text='Hyderabad']"
+   },
+	"txt_Address_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Address']"
+   },
+	"inputFeild_Address_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_address']"
+   },
+	"inputFeild_Address_Details_Dismiss" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "(//android.widget.ImageView[@content-desc='Just Billing'])[3]"
+   },
+	"txt_MISC_Details" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='MISC. DETAILS']"
+   },
+	"txt_GSTIN" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='GSTIN']"
+   },
+	"inputFeild_GSTIN" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_gstin']"
+   },
+	"txt_Currency" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Currency']"
+   },
+	"dropDown_Currency" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout//android.widget.Spinner[@resource-id='cloud.effiasoft.justbillingstd:id/spn_org_currency']"
+   },
+	"selection_Currency" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvTitle' and @text='Indian Rupee']"
+   },
+	"txt_Preferred_Language" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Preferred Language']"
+   },
+	"dropDown_Preferred_Language" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout//android.widget.Spinner[@resource-id='cloud.effiasoft.justbillingstd:id/spn_language']"
+   },
+	"selection_Preferred_Language" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvTitle' and @text='English']"
+   },
+	"txt_Referral_Code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Referral Code (Optional)']"
+   },
+	"inputField_Referral_Code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_referral_code']"
+   },
+	"rd_btn_Whatsapp_notifications" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/chk_whatsapp"
+   },
+	"txt_Whatsapp_notifications" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/txt_whatsapp"
+   },
+	"rd_btn_Accept_TermsAndConditions" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/chk_accept_terms"
+   },
+	"txt_Accept_TermsAndConditions" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/txt_terms"
+   },
+	"txt_Verify_Org_details" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/verify"
+   },
+	"btn_Verify_Org_details" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/btn_next"
+   }
+},
+"Welcome_Back_Page" : {
+	"txt_Welcome_back" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[contains(@text,'Welcome')]"
+   },
+	"txt_Org_code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Organization Code']"
+   },
+	"inputField_Org_code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_org_code']"
+   },
+	"txt_Acc_code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Account ID']"
+   },
+	"inputField_Acc_code" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_account_id']"
+   },
+	"txt_Next" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Next']"
+   },
+	"btn_Next" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.ImageButton"
+   },
+	"txt_ERROR" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tvTitle"
+   },
+	"txt_ERROR_OK" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/txtPositive"
+   },
+	"btn_ERROR_OK" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.ImageButton[@content-desc='Just Billing']"
+   },
+	"txt_Msg_ERROR" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/tvMsg']"
+   },
+	"btn_BackToPrevious" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/img_back"
+   }
+},
+"Sign_In_Page" : {
+	"txt_Sign_In" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.RelativeLayout[@resource-id='cloud.effiasoft.justbillingstd:id/rlTop']//android.widget.TextView[@text='Sign In']"
+   },
+	"logo_JB_Image" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.ImageView[@resource-id='cloud.effiasoft.justbillingstd:id/img_app_logo']"
+   },
+	"txt_User_ID" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='User ID']"
+   },
+	"inputField_User_ID" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_email_address']"
+   },
+	"txt_Password" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@resource-id='cloud.effiasoft.justbillingstd:id/headerTxtView' and @text='Password']"
+   },
+	"inputField_Password" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.EditText[@resource-id='cloud.effiasoft.justbillingstd:id/edt_password']"
+   },
+	"forgot_Password" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tv_forgetPassword"
+   },
+	"txt_New_User" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='New User']"
+   },
+	"btn_New_User" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/fbNewUser"
+   },
+	"txt_Sign_in_btn" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.LinearLayout[@resource-id='cloud.effiasoft.justbillingstd:id/ll_login']//android.widget.TextView[@text='Sign In']"
+   },
+	"btn_Sign_in_btn" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/fbLogin"
+   },
+	"txt_Error" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tvTitle"
+   },
+	"txt_Error_Message" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/tvMsg"
+   },
+	"txt_Error_Accept_Ok" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/txtPositive"
+   },
+	"btn_Error_Accept_Ok" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.ImageButton[@content-desc='Just Billing']"
+   },
+	"btn_BackToPrevious" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/img_back"
+   }
+},
+"My_Subscription_Page" : {
+	"txt_My_Subscription" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='My Subscription']"
+   },
+	"txt_Subscription_Days" : {
+	"locatorType" : "id",
+	"locatorValue" : "cloud.effiasoft.justbillingstd:id/txt_subscriptionDays"
+   },
+	"txt_Subscription_Days_Left" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Days left in Subscription']"
+   },
+	"btn_Proceed" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.ImageButton"
+   },
+	"txt_Proceed" : {
+	"locatorType" : "xpath",
+	"locatorValue" : "//android.widget.TextView[@text='Proceed']"
+   },
+}
+}

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.framework.listeners.TestNGRetry"></listener>
+    </listeners>
+    <test name="Test">
+        <parameter name="udid" value="380b98ec1b057ece"/>
+        <!--<parameter name="udid" value="394dc6e2"/>-->
+        <!--<parameter name="udid" value="0976fe6c"/>
+       <parameter name="udid" value="aaa1ca65"/>-->
+        <parameter name="systemPort" value="8200"/>
+        <parameter name="platform" value="Android 13"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+                <include name="registration_and_login"/>
+                <include name="onboarding_flow"/>
+                <include name="hashtag_details_screen"/>
+                <include name="explore_screen"/>
+                <include name="koo_creation"/>
+                <include name="user_block"/>
+                <include name="koo_detail_screen"/>
+                <include name="Profile_Screen"/>
+                <include name="Edit_profile"/>
+                <include name="search_screen"/>
+                <include name="settings_screen"/>
+                <include name="homeTab_screen"/>
+                <include name="people_tab"/>
+                <include name="newUser_flow"/>
+                <include name="Koo_Rewards"/>
+                <include name="Notification_Screen"/>
+                <include name="logOut_DeleteTest"/>
+                <include name="koo_Chats"/>
+                <include name="Topics"/>
+            </run>
+        </groups>
+   
+        <classes>
+            <class name="com.framework.android.testcases.registrationAndLoginFlowTests.LanguageSelectionTest">
+                <methods>
+                    <include name="verifyRewardBannerForHindiAndVerifyLoginPageHeading"/>
+                    <include name="verifyAvailableLanguagesInEnglish"/>
+                    <include name="verifyAvailableLanguagesInSameLanguage"/>
+                    <include name="verifyCheckBoxesForAvailableLanguages"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.registrationAndLoginFlowTests.InternationalLanguageTest">
+                <methods>
+                    <include name="verifySignInButtonsDisplay"/>
+                    <include name="verifyEmailLoginScreenDisplay"/>
+                    <include name="verifyResendOTPButtons"/>
+                    <include name="verifyErrorMessageForOTPFailure"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.registrationAndLoginFlowTests.ProductExplainerTest">
+                <methods>
+                    <include name="verifyEmailLoginScreen"/>
+                    <include name="verifyCaptchaPopUpAfterSignInWithEmail"/>
+                    <include name="verifyLanguageChangeButtonOnEmailLoginScreen"/>
+                    <include name="verifyCaptchaForInternationalLogin"/>
+                </methods>
+            </class>
+              <class name="com.framework.android.testcases.exploreScreenTests.TrendingTest">
+                <methods>
+                 <include name="verifyUserCanReactOnKooFromSubTab"/>
+                    <include name="verifyTrendingAndTopicsTab"/>
+                    <include name="verifySelectedHashTagOnKooCreation"/>
+                    <include name="verifySelectedNERTagOnKooCreation"/>
+                    <include name="verifyFirstHanhTagOnClickOfTopImage"/>
+                    <include name="verifySubTabsUnderTrendingTab"/> 
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.registrationAndLoginFlowTests.GoogleEmailPopUpTest">
+                <methods>
+                    <include name="verifyRegistrationPage"/>
+                    <include name="verifyRegisteredEmailPopUpNotDisplayWhileAddingMultiChildAccount"/>
+                    <include name="verifyChildAccountFromAddAccount"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.registrationAndLoginFlowTests.LoginKooTest">
+                <methods>
+                    <include name="verifyUserLoginWithOTP"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.onBoardingFlowTests.ScreensTest">
+                <methods>
+                    <include name="verifyAfterLoginValidUserRedirectsOnFeedTab"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.onBoardingFlowTests.OnBoardingFlowTest">
+                <methods>
+                    <exclude name="verifyKeyboardAutoOpenForUpdateNameField"/>
+                    <exclude name="verifyUserCanUploadProfilePicture"/>
+                    <exclude name="verifyUserCanSelectInterest"/>
+                    <exclude name="verifyTopicsArrangedInCategories"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.newUserFlowTests.NewUserFlowTest">
+                <methods>
+                    <exclude name="verifyTopFiftyBulkFollowButtonOnFeedTab"/>
+                    <exclude name="verifyBulkFollowAndSBF"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.hashTagDetailScreenTests.HashTagCreationTest">
+                <methods>
+                    <include name="verifyHashTagPopUp"/>
+                    <include name="verifyHashTagPopUpOnSearch"/>
+                    <include name="verifyBackAndShareButtonOnHashTag"/>
+                    <include name="verifyShareButtonOnHashTagAndSharePopUp"/>
+                </methods>
+            </class>
+          
+            <class name="com.framework.android.testcases.userBlockTests.UserBlockTest">
+                <methods>
+                    <include name="verifyUserBlockUnblockButtons"/>
+                    <include name="verifyManageBlockedUserSection"/>
+                    <include name="verifyBlockedUserShouldNotVisible"/>
+                    <include name="verifyPaginationForBlockedUsers"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooDetailScreenTest.KooDetailScreenTest">
+                <methods>
+                    <include name="verifyKooDetailScreenPage"/>
+                    <include name="verifyBackButtonAndBirdIconFunctionality"/>
+                    <include name="verifyUserCanHideComments"/>
+                    <include name="verifyReactionBarOnCommentsAndExactCountOfComments"/>
+                    <include name="verifyViewMoreOptionOnComments"/>
+                    <include name="verifyVideoContinuePlayInKooDetailPage"/>
+                    <include name="verifyUserCanSeeAndParticipateOnPollKooAndBigFollowButton"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.searchScreenTests.SearchScreenTest">
+                <methods>
+                    <include name="verifySearchScreenAndRecentSearch"/>
+                    <include name="verifySeeAllResultsLink"/>
+                    <include name="verifyNoResultFoundMessage"/>
+                    <include name="verifyAllTabsDataOnSearchResults"/>
+                    <include name="verifyPaginationOnSearchResult"/>
+                    <include name="verifyUserCanFollowProfile"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.settingsScreenTests.SettingsScreenTest">
+                <methods>
+                    <include name="verifySettingsScreen"/>
+                    <include name="verifyAllSettingsActions"/>
+                    <include name="verifyChangeInEnglishActions"/>
+                    <include name="verifyLanguageAsPerUserLocation"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.exploreScreenTests.TopicsAndElementsTest">
+                <methods>
+                    <include name="verifyTopicsTabWithNERTag"/>
+                    <include name="verifyPlusKooButton"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.homeScreenTabTests.HomeScreenTabTest">
+                <methods>
+                    <include name="verifyBottomNavigationBarIcons"/>
+                    <include name="verifyBottomNavigationBarIconsTransition"/>
+                    <include name="verifyTabsOnHeaderForHomePage"/>
+                    <include name="verifyRedDotOnNextTab"/>
+                    <include name="verifyTabsForNewUser"/>
+                    <include name="verifyKooBirdFunctionality"/>
+                    <include name="verifyOnClickOfTabUserRedirectsToTopOfThePage"/> 
+                    <include name="verifyBannersOnFeedPage"/>
+                    <include name="verifyTrendingKooPageAndRefreshIconOnTrendingKoo"/>
+                    <include name="verifyKoosInRankOnFeedPage"/>
+                    <include name="verifyKooTextMediaAndReactionBarIcons"/>
+                    <include name="verifyCommentsShowsBelowTheKooAndCommentsDetailSection"/>
+                    <exclude name="verifySelectedTopicShouldVisible"/>
+                    <include name="verifyFreshKoosVisibleOnHomeScreen"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.homeScreenTabTests.ViewKoosFromTest">
+                <methods>
+                    <include name="verifyViewKoosFromButton"/>
+                    <include name="verifyFiveProfileIcons"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.homeScreenTabTests.CarouselsTest">
+                <methods>
+                    <include name="verifyHorizontalCarouselForNewUser"/>
+                    <include name="verifyFollowUnfollowButtonFunctionalityFromCarousel"/>
+                    <include name="verifyBoostedPopUpTextOnProfile"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.peopleTabTests.PeopleTabTest">
+                <methods>
+                    <include name="verifyDiscoverPeopleWidget"/>
+                    <include name="verifyPeopleDetailPageAndFollowUFollowFunctionality"/>
+                    <include name="verifyFindYourFriendsAndInviteButtonFunctionality"/>
+                    <include name="verifyPeopleTabSectionHeadings"/>
+                    <include name="verifyProfileShouldRefreshOnPeopleTab"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationScreenTest">
+                <methods>
+                    <include name="verifyScheduleandDraftButtons"/>
+                    <include name="verifytitle"/>
+                    <exclude name="verifyEditKoo"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationSettingsTest">
+                <methods>
+                    <include name="verifyKooCreationSettings"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationScheduleTest">
+                <methods>
+                    <include name="verifyKooCreationSchedule"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationDraftTest">
+                <methods>
+                    <include name="verifyKooCreationDraft"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationExclusiveKooTest">
+                <methods>
+                    <include name="verifyKooCreationExclusiveKoo"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationEditingAndTranslationTest">
+                <methods>
+                    <include name="verifyEditngAndTransltion"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationCreateThreadTest">
+                <methods>
+                    <include name="verifyKooCreationThread"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCreationTests.KooCreationDeleteKooTest">
+                <methods>
+                    <include name="verifyDeleteKoo"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.editProfileTests.EditProfileTest">
+                <methods>
+                    <include name="verifyEditProfile"/>
+                    <include name="verifyEmailMobileLinking"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.ProfileScreensTests.InformationTest">
+                <methods>
+                    <include name="verifyInformationPage"/>
+                    <include name="verifyElements"/>
+                    <include name="verifySelfVerification"/>
+                    <include name="verifyKoosTab"/>
+                    <include name="verifyFollowingFollowersTab"/>
+                    <include name="verifypinnedKoo"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooRewardsProgramsTest.ReferAndEarnTest">
+                <methods>
+                    <include name="verifyReferAndEarnPage"/>
+                    <exclude name="verifyTransactionAndCoinPage"/>
+                    <exclude name="verifywithdrawPage"/>
+                    <exclude name="verifyRewardsPage"/>
+                    <include name="verifymultiAccount"/>
+                </methods>
+            </class>
+
+            <class name="com.framework.android.testcases.NotificationScreensTest.NotificationTest">
+
+                <methods>
+                    <include name="verifyPanelPage"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.logoutAndDeleteTests.LogOutAndDeleteTest">
+                <methods>
+                    <include name="verifyLogoUtAccount"/>
+                    <include name="verifyDeleteAccount"/>
+                    <include name="verifyMultiAccount"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.chatsTest.ChatsTest">
+                <methods>
+                    <include name="verifyChatPage"/>
+                </methods>
+            </class>
+
+            <class name="com.framework.android.testcases.topicsTests.TopicWidgetTest">
+                <methods>
+                    <include name="verifyTopicWidgetPage"/>
+                    <include name="verifyTopicWidget"/>
+                    <include name="verifyTopicTabPage"/>
+                </methods>
+            </class>             
+
+            <class name="com.framework.android.testcases.topicsTests.TopicsTabTest">
+                <methods>
+                    <include name="verifyTopicsTabPositionOnHomePage"/>
+                </methods>
+            </class>
+            <class name="com.framework.android.testcases.kooCardTests.KooCardTest">
+                <methods>
+                    <include name="verifyUserNameHandleProfessionFieldsOnEditProfile"/>
+                    <include name="verifyTimeStampOnRightOfKooCard"/>
+                    <include name="verifyPlusFollowButtonOnRightSideOfKoo"/>
+                    <include name="verifyUserShouldBeFollowedAndViewKooButton"/>
+                    <include name="verifySaveKooIconAndUserCanSaveKoo"/>
+                    <include name="verifyKooTitleMediaReactionBar"/>
+                    <include name="verifyHashTagAndAtTheRateBeforeText"/> 
+                    <include name="verifyUserCanSeeAllTypesOfMedia"/>
+                    <include name="verifyLikeCommentRekooCount"/>
+                    <include name="verifyLanguageSwitchBtnOnMLKKoo"/> 
+                </methods>
+            </class>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

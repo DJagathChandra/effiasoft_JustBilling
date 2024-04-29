@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-29T11:26:58 IST" name="Default suite" finished-at="2024-04-29T11:28:19 IST" duration-ms="80682">
+    <groups>
+      <group name="JB_Login">
+        <method signature="LoginTest.login_Hello_Already_To_JB_Welcome_Negative()[pri:0, instance:JB_Tests.LoginTest@158a8276]" name="login_Hello_Already_To_JB_Welcome_Negative" class="JB_Tests.LoginTest"/>
+      </group> <!-- JB_Login -->
+      <group name="Smoke">
+        <method signature="LoginTest.login_Hello_Already_To_JB_Welcome_Negative()[pri:0, instance:JB_Tests.LoginTest@158a8276]" name="login_Hello_Already_To_JB_Welcome_Negative" class="JB_Tests.LoginTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-04-29T11:26:58 IST" name="Default test" finished-at="2024-04-29T11:28:19 IST" duration-ms="80682">
+      <class name="JB_Tests.LoginTest">
+        <test-method signature="login_Hello_Already_To_JB_Welcome_Negative()[pri:0, instance:JB_Tests.LoginTest@158a8276]" started-at="2024-04-29T11:26:58 IST" name="login_Hello_Already_To_JB_Welcome_Negative" description="[TC_07 Verify ***login_Hello_Already_To_JB_Welcome_Negative*** successfully" finished-at="2024-04-29T11:28:17 IST" duration-ms="78747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Hello_Already_To_JB_Welcome_Negative -->
+      </class> <!-- JB_Tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

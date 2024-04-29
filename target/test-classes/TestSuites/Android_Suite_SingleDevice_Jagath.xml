@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listeners.TestNGRetry"></listener>
+	</listeners>
+	<test name="Test">
+		<parameter name="udid" value="4Z01Z3227Y372417074" />
+		<parameter name="systemPort" value="8200" />
+		<parameter name="platform" value="Android 13" />
+		<groups>
+			<run>
+				<include name="Smoke" />
+				<include name="JB_Login" />
+			</run>
+		</groups>
+		<classes>
+			<class name="JB_Tests.LoginTest">
+				<methods>
+					<include name="login_Hello_New_To_JB" />
+					<include name="login_Hello_New_To_JB_Business" />
+					<include name="login_Hello_New_To_JB_Retail" />
+					<include name="login_Hello_New_To_JB_SubScription" />
+					<include name="login_Hello_New_To_JB_Org_Details" />
+					<include name="login_Hello_Already_To_JB" />
+					<include name="login_Hello_Already_To_JB_Welcome" />
+					<include name="login_Hello_Already_To_JB_SignIN" />
+					<include name="login_Hello_Already_To_JB_MySub" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

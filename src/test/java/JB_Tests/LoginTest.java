@@ -125,8 +125,8 @@ public class LoginTest {
 		ReportManager.logInfo("##### login_Hello_Already_To_JB_Welcome #####");
 		Welcom_Page welcome_Page = new Welcom_Page();
 		login_Hello_Already_To_JB();
-		welcome_Page.fill_Org_Code("");
-		welcome_Page.fill_Acc_ID("");
+		welcome_Page.fill_Org_Code(ConfigReader.getValue("orgCode"));
+		welcome_Page.fill_Acc_ID(ConfigReader.getValue("accountID"));
 		welcome_Page.verifyAndClickon_Next(true);
 		Thread.sleep(2000);
 		ReportManager.logPass("##### SUCCESS ---- login_Hello_Already_To_JB_Welcome #####");
